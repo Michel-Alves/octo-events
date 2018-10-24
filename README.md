@@ -1,23 +1,23 @@
 # Octo Events
 
-Octo Events is an application that listens to Github Events via webhooks and expose by an api for later use.
+Octo Events é uma aplicação que recebe eventos do Github Events via webhooks e os expõe via API para uso futuro.
 
 ![alt text](imgs/octo_events.png)
 
- The test consists in building 2 endpoints:
+ O teste consiste na construção de 2 endpoints:
 
-## 1. Webhook Endpoint
+## 1. Endpoint Webhook
 
-The Webhook endpoint receives events from Github and saves them on the database, in order to do that you must read the following docs:
+O endpoint Webhook recebe eventos do Github e os salva no banco. A fim de implementá-lo, leia os seguintes docs:
 
 * Webhooks Overview: https://developer.github.com/webhooks/ 
 * Creating Webhooks : https://developer.github.com/webhooks/creating/
 
-It must be called `/events`
+O endpoint deve ser disponibilizado em `/events`
 
-## 2. Events Endpoint
+## 2. Endpoint Events 
 
-The Events endpoint will expose the persist the events by an api that will filter by issue number
+O endpoint Events irá expor eventos por uma API que os filtrará através do número da issue:
 
 **Request:**
 
@@ -33,9 +33,9 @@ The Events endpoint will expose the persist the events by an api that will filte
 ]
 ```
 
-**Github Integration Instructions**
+**Instruções de integração com o Github **
 
-* Tip: You can use ngrok (https://ngrok.com/)  to install / debug the webhook calls, it generates a public url that will route to your local host:
+* Dica: Você pode usar o ngrok (https://ngrok.com/) para instalar / debugar as chamadas do webhook. Ele gera uma URL pública que irá rotear para sua máquina:
 
    $ sudo ngrok http 4000 
 
@@ -45,11 +45,11 @@ The Events endpoint will expose the persist the events by an api that will filte
 
 ![alt text](imgs/add_webhook.png)
  
-**Final Observations**
+**Observações finais**
 
-* Use any library / framework you want, you don't have to do anything "from scratch";
-* Write tests, use your favorite framework for that;
-* Use Postgres 9.6 as database;
-* Add to README.md your instructions for running the project.
-* We'll run your code with the latest Kotlin version;
-* Success and have fun :-)
+* Use qualquer biblioteca ou framework que quiser, você não precisa fazer nada "do zero";
+* Ë obrigatório escrever testes, use seu framework favorito pra isso;
+* Use o Postgres 9.6 como banco;
+* Adicione um README.md com instruções para executar o projeto.
+* Executaremos seu código com a última versão do Java ou Kotlin (se usar);
+* Sucesso! :-)
