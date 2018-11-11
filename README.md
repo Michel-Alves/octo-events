@@ -14,7 +14,7 @@ Octo Events é uma aplicação que recebe eventos do Github Events via webhooks 
 
 ### Passo a passo
 
-####1 - Instalar o PostgresSQL:
+#### 1 - Instalar o PostgresSQL:
 
 A página oficial contém [links para download](https://www.postgresql.org/download/) do SGBD para diversas plataformas.
 
@@ -46,7 +46,7 @@ $ sudo apt-get install postgresql postgresql-contrib
 
 `sudo -u postgres password octo_events`
 
-####2 - Configurar as propriedades da aplicação 
+#### 2 - Configurar as propriedades da aplicação 
 
 Caminho até o arquivo de propriedades da aplicação:
 `recrutamento-kotlin-jya-michelsilves/src/main/resources/application.yml`
