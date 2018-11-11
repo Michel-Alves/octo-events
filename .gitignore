@@ -1,0 +1,6 @@
+
+*.class
+
+target/surefire-reports/
+
+target/
